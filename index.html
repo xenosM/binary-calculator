@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>binary calculator</title>
+    <link rel="stylesheet" href="css/style.css"></link>
+    
+</head>
+<body class="flex-centered">
+    <main class="flex-centered">
+        <h1>Binary Calculator</h1>
+        <div class="output"></div>
+        <section class="number_section">
+            <button class="zero_btn" onclick="input(event)" value="0">0</button>
+            <button class="one_btn" onclick="input(event)" value="1">1</button>
+        </section>
+        <section class="action_section">
+            <button class="backspace_btn" onclick = "backspace()">Backspace</button>
+            <button class="clr_btn" onclick="clr()">AC</button>
+        </section>
+        <section class="operator_section">
+            <button class="plus_btn operator_btn" onclick="input(event)" value="+">+</button>
+            <button class="minus_btn  operator_btn" onclick="input(event)" value="-">-</button>
+            <button class="multiply_btn  operator_btn" onclick="input(event)" value="*">*</button>
+            <button class="division_btn  operator_btn" onclick="input(event)" value="/">/</button>
+        </section>
+        <button class="calculate_btn" onclick="calculate()">Calculate</button>
+    </main>
+</body>
+<script src="js/app.js"></script>
+</html>
